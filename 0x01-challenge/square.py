@@ -1,34 +1,34 @@
 #!/usr/bin/python3
 """
-Defines Rectangle class
+Defines Square class
 """
 
 
-class Rectangle():
-    """ attributes and methods for Rectangle objects """
+class Square():
+    """ attributes and methods for Square objects """
 
     width = 0
     height = 0
 
     def __init__(self, *args, **kwargs):
-        """ initializes Rectangle object """
+        """ initializes Square object """
         for key, value in kwargs.items():
             setattr(self, key, value)
 
     def area(self):
-        """ area of the rectangle """
+        """ area of the square """
         return self.width * self.height
 
     def perimeter(self):
-        """ perimeter of the rectangle """
+        """ perimeter of the square """
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
-        """ string representation of the rectangle """
+        """ string representation of the square """
         return "{}/{}".format(self.width, self.height)
 
 if __name__ == "__main__":
-    r = Rectangle(width=12, height=9)
-    print(r)
-    print(r.area())
-    print(r.perimeter())
+    s = Square(width=12, height=9)
+    print(s)
+    print(s.area())
+    print(s.perimeter())

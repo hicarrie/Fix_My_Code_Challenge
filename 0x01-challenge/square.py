@@ -4,7 +4,7 @@ Defines Square class
 """
 
 
-class Square():
+class Square:
     """ attributes and methods for Square objects """
 
     """ class attribute: width of Square """

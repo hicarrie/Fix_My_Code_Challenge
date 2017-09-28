@@ -7,7 +7,10 @@ Defines Square class
 class Square():
     """ attributes and methods for Square objects """
 
+    """ class attribute: width of Square """
     width = 0
+
+    """ class attribute: height of Square """
     height = 0
 
     def __init__(self, *args, **kwargs):

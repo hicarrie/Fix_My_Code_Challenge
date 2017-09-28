@@ -4,7 +4,7 @@ Defines Square class
 """
 
 
-class Square:
+class Square():
     """ attributes and methods for Square objects """
 
     """ class attribute: width of Square """
@@ -31,6 +31,7 @@ class Square:
         return "{}/{}".format(self.width, self.height)
 
 if __name__ == "__main__":
+    """ tests initialization of Square instance """
     s = Square(width=12, height=9)
     print(s)
     print(s.area())
